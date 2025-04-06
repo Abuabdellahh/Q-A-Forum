@@ -2,7 +2,8 @@ import Footer from "../../Component/Footer/Footer";
 import { Link } from "react-router-dom";
 import React from "react";
 import classes from "./home.module.css";
-import logo from "../../Asset/image/evangadi-logo-home.png";
+// import logo from "../../Asset/image/evangadi-logo-home.png";
+import logo from "../../Asset/image/Q&A forum-logo.png";
 import img from "../../Asset/image/newpic.jpg";
 const Home = () => {
   return (
@@ -26,7 +27,7 @@ const Home = () => {
             </div>
           </nav>
         </div>
-        <div className={classes.content}>
+        {/* <div className={classes.content}>
           <h1 className={classes.anim}>
             Evangadi
             <br />
@@ -41,7 +42,28 @@ const Home = () => {
           <Link to="/login" className={`${classes.login_btn} ${classes.anim}`}>
             Join Now
           </Link>
-        </div>
+        </div> */}
+        <div className={classes.content}>
+  <h1 className={classes.anim}>
+    <span className={classes.titleMain}>Q&A</span>
+    <span className={classes.titleSub}>Forum</span>
+  </h1>
+  
+  <p className={`${classes.anim} ${classes.introText}`}>
+    Welcome to your dedicated Q&A platform - ask questions, share knowledge, 
+    and find clear solutions. Engage with a community-driven space where:
+  </p>
+
+  <ul className={`${classes.anim} ${classes.featureList}`}>
+    <li>📚 Students get academic help</li>
+    <li>👩🏫 Teachers share expertise</li>
+    <li>💡 Everyone learns through discussion</li>
+  </ul>
+
+  <Link to="/login" className={`${classes.login_btn} ${classes.anim}`}>
+            Join Now
+          </Link>
+</div>
         <img
           src={img}
           alt=""

@@ -4,7 +4,7 @@ import classes from "./style.module.css";
 const PrivacyPolicy = () => {
   return (
     <LoginLayout>
-      <div className={classes.outer_container_wrapper}>
+      {/* <div className={classes.outer_container_wrapper}>
         <h1>Terms and Conditions</h1>
       </div>
       <div className={classes.discription_Wrapper}>
@@ -179,7 +179,109 @@ const PrivacyPolicy = () => {
           use of this website indicates your acceptance of the amended
           Agreement.
         </p>
-      </div>
+      </div> */}
+
+
+<div className={classes.outer_container_wrapper}>
+  <h1>Terms and Conditions</h1>
+</div>
+<div className={classes.discription_Wrapper}>
+  <h2>Terms and Conditions of Q&A Forum</h2>
+  <p>Effective April 06, 2025</p>
+  <br />
+  <p>
+    This Terms of Use Agreement ("Agreement") is between you (the user) and Q&A Forum. 
+    It governs your use of the Q&A Forum website, services, subsites, communities, messaging, 
+    and mobile apps (collectively, "Q&A Forum"). By accessing or using Q&A Forum, you agree 
+    to these terms and our Privacy Policy. Please read both carefully before proceeding.
+  </p>
+  <br />
+  <h3>Acceptance of Terms</h3>
+  <p>
+    Using Q&A Forum means you accept these Terms and Conditions and the Privacy Policy.
+  </p>
+  <h3>Terminologies</h3>
+  <p>
+    In these Terms, "You," "User," or "Client" means you, the person using Q&A Forum and 
+    agreeing to these terms. "We," "Us," or "Q&A Forum" refers to the Q&A Forum platform. 
+    "Party" or "Parties" refers to you, us, or both. Singular, plural, or gendered terms are 
+    interchangeable and refer to the same entities.
+  </p>
+  <h3>Eligibility and Access</h3>
+  <p>
+    You must be at least 13 years old to use Q&A Forum. If you’re under 13, you may not use 
+    this platform under any circumstances. We may refuse service or change eligibility at our 
+    discretion. You’re responsible for complying with Ethiopian laws. Access to Q&A Forum is 
+    for your personal use only and is revoked where prohibited by law or these terms.
+  </p>
+  <br />
+  <p>
+    We may suspend or terminate your access, account, or content at any time, with or without 
+    notice, for violations of this Agreement or any reason we deem necessary. We may monitor 
+    Q&A Forum but are not obligated to do so.
+  </p>
+  <h3>Termination</h3>
+  <br />
+  <p>
+    We can end your access to Q&A Forum at any time, with or without cause or notice, 
+    potentially deleting your associated data. Provisions like ownership, disclaimers, 
+    indemnity, and liability limits will survive termination.
+  </p>
+  <h3>Limitation of Liability</h3>
+  <p>
+    Q&A Forum is not liable for any loss, business interruption, or damages (direct, indirect, 
+    special, or consequential) arising from your use, even if we’re aware of potential risks. 
+    This applies regardless of legal theory (contract, tort, or otherwise).
+  </p>
+  <br />
+  <p>
+    Q&A Forum is for personal use only. You may not use it to break Ethiopian laws, invade 
+    privacy, or infringe on intellectual property or other rights.
+  </p>
+  <br />
+  <p>
+    Q&A Forum is for entertainment and information. We’re not responsible for decisions you 
+    make based on content here.
+  </p>
+  <h3>Content</h3>
+  <p>
+    "Content" includes URLs, videos, audio, posts, comments, data, text, images, software, 
+    and features available on Q&A Forum.
+  </p>
+  <br />
+  <h3>User Content</h3>
+  <p>
+    You’re solely responsible for content you add, upload, or post ("User Content"). Using 
+    Q&A Forum to access content is at your own risk, and you bear any resulting damage or loss.
+  </p>
+  <p>
+    By posting User Content, you grant Q&A Forum a royalty-free, perpetual, worldwide license 
+    to use, reproduce, distribute, display, or create derivatives of it for any purpose, 
+    including commercial use, and to allow others to do the same. You retain your copyright 
+    but share these rights with us.
+  </p>
+  <p>
+    You confirm your User Content doesn’t violate any copyright, trademark, or other rights 
+    under Ethiopian law. See our Privacy Policy for how we handle your data.
+  </p>
+  <p>
+    We don’t endorse or take responsibility for User Content or third-party links. You agree 
+    not to post spam, illegal content, or use automated tools (e.g., bots) without permission. 
+    You won’t harass, bully, or post hate speech, threats, pornography, or violence. You won’t 
+    disrupt Q&A Forum’s functionality or share personal data without consent.
+  </p>
+  <h3>Governing Law and Jurisdiction</h3>
+  <p>
+    These Terms are governed by the laws of Ethiopia. Any disputes arising from or related to 
+    these Terms will be resolved exclusively in the courts of Ethiopia.
+  </p>
+  <h3>Modification</h3>
+  <p>
+    We may update this Agreement anytime by posting changes on Q&A Forum. Your continued use 
+    means you accept the updated terms.
+  </p>
+</div>
+      
     </LoginLayout>
   );
 };

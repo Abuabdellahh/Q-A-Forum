@@ -12,29 +12,31 @@ const Footer = () => {
           <div className="row">
             <div className="col-md-4">
               <div className={classes.footer__brand}>
-                <Link to="/">
+                {/* <Link to="/">
                   <img
                     src="https://www.evangadi.com/themes/humans//assets/images/misc/evangadi-logo-footer.png"
                     alt="Evangadi Logo"
                   />
-                </Link>
+                </Link> */}
                 <div className={classes.social__Container}>
                   <div className={classes.social__logo}>
                     <Link
-                      to="https://www.facebook.com/evangaditech"
+                      // to="https://www.facebook.com/evangaditech"
                       target="_blank"
                     >
                       <FaFacebookF className={classes.logo_wrapper} />
                     </Link>
                   </div>
                   <div className={classes.social__logo}>
-                    <Link to="https://www.instagram.com/evangaditech/">
+                    <Link 
+                    // to="https://www.instagram.com/evangaditech/"
+                    >
                       <FaInstagram className={classes.logo_wrapper} />
                     </Link>
                   </div>
                   <div className={classes.social__logo}>
                     <Link
-                      to="https://www.youtube.com/@EvangadiTech"
+                      // to="https://www.youtube.com/@EvangadiTech"
                       target="_blank"
                     >
                       <FaYoutube className={classes.logo_wrapper} />
@@ -90,15 +92,17 @@ const Footer = () => {
                 <h2>Contact Info</h2>
                 <ul>
                   <li>
-                    <Link to="https://www.evangadi.com/">
-                      Evangadi Networks
+                    <Link 
+                    // to="https://www.evangadi.com/"
+                    >
+                     Q&A Forum Networks
                     </Link>
                   </li>
                   <li>
-                    <div>support@evangadi.com</div>
+                    <div>Abuabdellah1099@gmail.com</div>
                   </li>
                   <li>
-                    <div>+1202386-2702</div>
+                    <div>+251910999967</div>
                   </li>
                 </ul>
               </div>
