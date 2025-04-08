@@ -3,27 +3,28 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh;
-  height: 100vh;
-  background-repeat: no-repeat;
-  width: 100%;
+  min-height: 100vh;
   margin: auto;
 }
+
 .signup__container {
   width: 89%;
   padding-top: 113px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 30px;
+  margin: 0 auto;
   font-size: 15px;
   font-weight: 400;
+  flex-wrap: wrap;
 }
 
 .signup__form {
   position: relative;
   width: 550px;
-  height: 548px;
+  height: auto;
+  min-height: 548px;
   border-radius: 10px;
   padding: 40px;
   background-color: #fff;
@@ -32,14 +33,14 @@
   border: 2px #fff solid;
   opacity: 1;
   line-height: 1.4rem;
+  flex: 1;
+  max-width: 550px;
 }
 
 .signup__title h6 {
   color: #344767;
-  /* font-family: "Poppins", sans-serif; */
   font-weight: 700;
   margin-bottom: 10px;
-  font-weight: 700;
   font-size: 20px;
   padding-top: 5%;
 }
@@ -57,29 +58,35 @@
   font-family: "Poppins", sans-serif;
   background-color: white;
 }
-.signup__Description_orange button :hover {
+
+.signup__Description_orange button:hover {
   background-color: #da7000 !important;
 }
+
 .signIn_Wrapper h6 {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   color: #344767;
   font-size: 18px;
 }
+
 .signIn_Wrapper p {
   font-family: "Poppins", sans-serif;
   color: #344767;
   font-size: 15px;
 }
+
 .signup__input {
   font-family: "Poppins", sans-serif;
   margin-bottom: 10px;
-  width: 469px;
+  width: 100%;
+  max-width: 469px;
   height: 49px;
   border-radius: 5px;
   border: 0.2px solid rgb(183, 181, 181);
   padding: 10px;
 }
+
 .firstLast_names {
   display: flex;
   gap: 20px;
@@ -112,55 +119,80 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
 .signup__btn:hover {
   background-color: #da7000 !important;
 }
+
 .password_Wrapper {
   font-size: 17px;
   padding-top: 3%;
   padding: 3.5% 0 3.5% 65%;
   color: #da7000;
 }
-/* about */
 
+/* about */
 .login__about {
   width: 500px;
-  height: 400px;
+  flex: 1;
+  max-width: 500px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.1);
+  text-align: left;
+  height: auto;
 }
+
 .email_Wrapper {
   margin-bottom: 10px;
 }
+
 .about {
   color: #da7000;
   font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
+
 .LoginWrapper {
   background-color: #516cf0;
   color: white;
-}
-.LoginWrapper {
   padding: 3% 46.5%;
 }
-.reset_button :hover {
+
+.reset_button:hover {
   background-color: #fe8402 !important;
 }
+
 .LoginWrapper:hover {
   background: #da7000 !important;
 }
+
 .about__title,
-.about__Discription {
+.about__Description {
   font-family: "Poppins", sans-serif;
   color: #344767;
+  margin-bottom: 20px;
 }
+
 .about__title h1 {
-  font-size: 35px;
+  font-size: 28px;
   font-family: "Poppins", sans-serif;
   font-weight: bolder;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(310deg, #000000, #e33f00);
 }
+
+.about__Description p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #344767;
+}
+
 .login__about > button {
   background-color: #fe8402;
   padding: 5px 20px;
@@ -169,28 +201,33 @@
   border-radius: 3px;
   color: white;
 }
+
 .errorHandling {
   color: red;
   margin-bottom: 3%;
   padding: 3%;
 }
-/* .error{background-color: pink;} */
+
 .email_Wrapper input {
   padding: 3% 57.5% 3% 3%;
   border: 0.2px solid rgb(183, 181, 181);
   border-radius: 3px;
   background-color: #e8f0fe;
+  width: 100%;
 }
+
 .input_wrapper input {
   padding: 5% 0% 6% 1%;
   border: 0.2px solid rgb(183, 181, 181);
   border-radius: 3px;
   background-color: #e8f0fe;
 }
+
 .signup_wrapper,
 .passwordReset_wrapper {
   display: none;
 }
+
 .passwordContainer {
   position: relative;
 }
@@ -216,73 +253,202 @@
 .passwordReset_wrapper.active {
   display: block;
 }
+
 .signup_wrapper.active {
   display: block;
 }
+
 .last_containerWrapper {
   background-color: #fe8402;
-  padding: 7px 35px;
-  width: 195px;
-  border-radius: 6%;
+  padding: 7px 15px;
+  width: fit-content;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.last_containerWrapper:hover {
+  background-color: #da7000;
+  transform: translateY(-2px);
 }
 
 .last_containerWrapper a {
   text-decoration: none;
   color: white;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
 }
-@media (max-width: 768px) {
+
+/* Large devices (desktops) */
+@media (max-width: 1200px) {
+  .signup__container {
+    width: 95%;
+    padding-top: 80px;
+  }
+  
+  .signup__form {
+    max-width: 500px;
+  }
+  
   .login__about {
-    display: none;
+    max-width: 450px;
+  }
+  
+  .about__title h1 {
+    font-size: 26px;
   }
 }
+
+/* Medium devices (tablets) */
+@media (max-width: 992px) {
+  .signup__container {
+    padding-top: 60px;
+    gap: 20px;
+  }
+  
+  .signup__form {
+    padding: 30px;
+    max-width: 450px;
+  }
+  
+  .login__about {
+    max-width: 400px;
+    padding: 25px;
+  }
+  
+  .about__title h1 {
+    font-size: 24px;
+  }
+}
+
+/* Small devices (landscape phones) */
+@media (max-width: 768px) {
+  .signup {
+    height: auto;
+    padding-top: 80px;
+  }
+  
+  .signup__container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .signup__form {
+    width: 90%;
+    max-width: 500px;
+    padding: 25px;
+  }
+  
+  .login__about {
+    width: 90%;
+    max-width: 500px;
+    margin-top: 25px;
+  }
+  
+  .password_Wrapper {
+    padding: 3.5% 0;
+    text-align: right;
+  }
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 576px) {
+  .signup__container {
+    width: 95%;
+    padding: 30px 0;
+  }
+  
+  .signup__form {
+    padding: 20px 15px;
+  }
+  
+  .login__about {
+    padding: 20px 15px;
+  }
+  
+  .about__title h1 {
+    font-size: 22px;
+  }
+  
+  .about__Description p {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 426px) {
   .signup__form {
-    width: 265px;
-    height: 487px;
-    padding: 21px;
+    width: 90%;
+    max-width: 350px;
+    padding: 20px 15px;
   }
-
+  
+  .login__about {
+    width: 90%;
+    max-width: 350px;
+  }
+  
   .password_Wrapper {
     font-size: 16px;
-    font-size: 17px;
-    padding-top: 3%;
     padding: 1.5% 0 3.5%;
-    color: #da7000;
+    text-align: center;
   }
-
+  
   .email_Wrapper input {
-    padding: 3% 16% 3% 3%;
-    border: 0.2px solid rgb(183, 181, 181);
-    border-radius: 3px;
-    background-color: #e8f0fe;
-    width: 217px;
+    padding: 10px;
+    width: 100%;
     height: 35px;
   }
+  
   .LoginWrapper {
     padding: 3% 42%;
   }
+  
   .input_wrapper input {
-    padding: 3% 16% 3% 3%;
-    border: 0.2px solid rgb(183, 181, 181);
-    border-radius: 3px;
-    background-color: #e8f0fe;
+    padding: 10px;
+    width: 100%;
   }
+  
   .firstLast_names {
-    gap: 0;
+    gap: 10px;
     flex-direction: column;
   }
-
+  
   .signup__input {
-    width: 217px;
+    width: 100%;
     height: 35px;
   }
+  
   .firstlast_names > input {
-    width: 217px;
+    width: 100%;
   }
+  
   .signup__btn {
     font-size: 16px;
-    height: 33px;
-    margin-top: 0;
-    margin-bottom: 0;
+    height: 40px;
+  }
+  
+  .about__title h1 {
+    font-size: 20px;
+  }
+  
+  .about__Description p {
+    font-size: 14px;
+  }
+}
+/* Further adjustments for very small screens */
+@media (max-width: 375px) {
+  .signup__form {
+    padding: 15px 10px;
+  }
+  
+  .signup__input,
+  .email_Wrapper input,
+  .input_wrapper input {
+    height: 40px;
+    font-size: 13px;
+    width: 100%;
   }
 }
